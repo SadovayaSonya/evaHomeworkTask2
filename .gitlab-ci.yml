@@ -1,0 +1,14 @@
+image: 'docker-hosted.artifactory.tcsbank.ru/eva-io/eva-edu-image-ci:release-1'
+
+variables:
+  CHROMEDRIVER_SKIP_DOWNLOAD: "true"
+  PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
+
+stages:
+  - 🧪 test
+
+🤝 e2e-tests:
+  stage: 🧪 test
+  script:
+    - npm ci
+    - npm test

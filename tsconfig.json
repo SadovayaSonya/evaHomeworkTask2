@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "es2020.string", "es2019.array"],
+    "moduleResolution": "node",
+    "target": "ES2019",
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "noUnusedLocals": false,
+    "paths": {
+      "*": ["./*"]
+    },
+    "types": ["node", "sync"],
+    "typeRoots": ["node_modules/@wdio", "node_modules/eva**/@typings"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true
+  },
+  "include": [
+    "./**/*.ts",
+    "./node_modules/eva**/@typings/**/**.d.ts",
+    "node_modules/expect-webdriverio/types/jest-global.d.ts"
+  ]
+}

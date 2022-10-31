@@ -1,0 +1,4 @@
+node_modules/
+.idea/
+allure-results/*
+eva.conf.js
